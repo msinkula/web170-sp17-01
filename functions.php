@@ -9,4 +9,8 @@ Version: 42.0
 */
 
 
+// Register Navigation Menus
+register_nav_menus(array('main-menu' => __('Main Menu')));
+//
+
 ?>
