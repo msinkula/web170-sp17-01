@@ -9,7 +9,7 @@
 	<?php the_content(); ?>
 	</article>
 	<?php endwhile; endif; ?>
-    <small>index.php</small>
+    <small>single.php</small>
     </div>
     <!-- End Text -->
  
