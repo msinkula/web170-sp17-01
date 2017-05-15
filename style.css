@@ -171,6 +171,12 @@ img {
 		float: left;
 	}
 	
+	#content img.size-thumbnail,
+	#content img.size-icon {
+		float: left;
+		margin-right: 20px;	
+	}
+	
 	#content img.size-large {
 		max-width: 620px;
 		height: auto;

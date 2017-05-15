@@ -13,4 +13,12 @@ Version: 42.0
 register_nav_menus(array('main-menu' => __('Main Menu')));
 //
 
+// Add Supprt for Post Thumbnails & Featured Images 
+add_theme_support('post-thumbnails');
+//
+
+// Create Custom Image Sizes
+add_image_size('icon', 140, 140, true); // 140 pixels wide by 140 pixels tall, hard crop mode
+//
+
 ?>
