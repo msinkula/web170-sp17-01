@@ -8,8 +8,13 @@ Description: This is the demo theme for the WEB170 section 01 class for the Spri
 Version: 42.0
 */
 
+// Register Sidebars
+register_sidebars(5, array('before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget' => '</div>'));
+//
 
-// Register Navigation Menus
+register_sidebar(array('name' =>  __('Fred', 'fred'), 'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget' => '</div>' ));
+
+// Register Navigation Menus 
 register_nav_menus(array('main-menu' => __('Main Menu')));
 //
 

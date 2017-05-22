@@ -239,6 +239,10 @@ img {
 	
 	}
 	
+	#sidebar div.widget {
+		margin-bottom: 20px;
+	}
+	
 #footer {
 	max-width: 980px; /* change to a max-width */
 	margin: 0 auto;
