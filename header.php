@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
+<title><?php get_mikes_title_tag(); ?></title>
 
 <!-- Begin Meta -->
+<meta name="description" content="<?php echo get_the_excerpt(); ?>">
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
 <!-- End Meta -->
 
