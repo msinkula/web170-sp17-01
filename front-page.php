@@ -1,13 +1,7 @@
 <?php get_header(); ?>
 
-  <!-- Begin Flex Slider -->
-    <div class="flexslider">
-        <ul class="slides">
-        <li><img src="<?php bloginfo('template_directory') ?>/images/img-slide-01.jpg" width="940" height="400" alt="Image One"></li>
-        <li><img src="<?php bloginfo('template_directory') ?>/images/img-slide-02.jpg" width="940" height="400" alt="Image Two"></li>
-        <li><img src="<?php bloginfo('template_directory') ?>/images/img-slide-03.jpg" width="940" height="400" alt="Image Three"></li>
-        </ul>
-    </div>
+    <!-- Begin Flex Slider -->
+    <?php get_flexslider_gallery(); ?>
     <!-- End Flex Slider -->
     
     <!-- Begin Widgets -->

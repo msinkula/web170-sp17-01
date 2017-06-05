@@ -62,4 +62,33 @@ function get_mikes_title_tag() {
 	
 }
 //
+
+// Get Attchment Images and Display as FlexSlider Gallery
+function get_flexslider_gallery() {
+	
+	global $post; // You saw what happened last time I forgot this. I felt really stoopid.
+	
+	$attachments = get_children(array('post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order'));
+	
+	if ($attachments) {
+		
+		echo '<div class="flexslider">'; // open flexslider markup
+		echo '<ul class="slides">';
+	
+		foreach ($attachments as $attachment) {
+			
+			echo '<li>';
+			echo wp_get_attachment_image($attachment->ID, 'large'); // generate image tag
+			echo '<p>'.get_post_field('post_excerpt', $attachment->ID).'</p>';
+			echo '</li>';
+			
+		}
+		
+		echo '<ul>';
+		echo '</div>'; // close flexslider markup
+		
+	}
+	
+}
+//
 ?>
